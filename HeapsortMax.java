@@ -23,7 +23,8 @@ public class HeapSortMax {
             largest = leftChildIdx ;
         if (rightChildIdx  < heapSize && arrA[rightChildIdx ] > arrA[largest])
             largest = rightChildIdx ;
-        if (largest != i) {
+        if (largest != i) 
+        {
             int swap = arrA[i];
             arrA[i] = arrA[largest];
             arrA[largest] = swap;
@@ -31,7 +32,8 @@ public class HeapSortMax {
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String args[]) 
+    {
         int arrA[] = {9, 10, 5, 3, 1, 2, 6};
 
         System.out.println("Original array is: " + Arrays.toString(arrA));
